@@ -54,13 +54,13 @@
   border-radius: 50%;
   border: 1px solid var(--modal-bg);
   cursor: pointer;
+
+  &:hover .modal-close-icon,
+  &:focus .modal-close-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-close-icon {
   transition: fill 250ms var(--animation-timing);
-}
-
-.close-icon:hover .modal-close-icon,
-.close-icon:focus .modal-close-icon {
-  fill: var(--accent-color);
 }

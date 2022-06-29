@@ -121,14 +121,12 @@ body {
   border: 1px solid var(--modal-bg);
   cursor: pointer;
 }
+.close-icon:hover .modal-close-icon, .close-icon:focus .modal-close-icon {
+  fill: var(--accent-color);
+}
 
 .modal-close-icon {
   transition: fill 250ms var(--animation-timing);
-}
-
-.close-icon:hover .modal-close-icon,
-.close-icon:focus .modal-close-icon {
-  fill: var(--accent-color);
 }
 
 .modal-form {
@@ -162,6 +160,13 @@ body {
   border-radius: 4px;
   transition: border 250ms var(--animation-timing);
 }
+.modal-data-input:focus, .modal-data-input:hover {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+.modal-data-input:focus + .modal-logo-icon, .modal-data-input:hover + .modal-logo-icon {
+  fill: var(--accent-color);
+}
 
 .modal-icon {
   position: relative;
@@ -174,23 +179,6 @@ body {
   transform: translateY(-50%);
   border: none;
   transition: fill 250ms var(--animation-timing);
-}
-
-.modal-data-input:focus,
-.modal-data-input:hover {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-
-.modal-data-input:focus + .modal-logo-icon,
-.modal-data-input:hover + .modal-logo-icon {
-  fill: var(--accent-color);
-}
-
-.modal-textarea:hover,
-.modal-textarea:focus {
-  border: 1px solid var(--accent-color);
-  outline: none;
 }
 
 .modal-data-label {
@@ -211,7 +199,10 @@ body {
   border-radius: 4px;
   transition: border 250ms var(--animation-timing);
 }
-
+.modal-textarea:hover, .modal-textarea:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
 .modal-textarea::placeholder {
   font-size: 12px;
   line-height: 14px;
@@ -220,13 +211,6 @@ body {
 }
 
 /* Checkbox в спрайте */
-.checkbox-label span {
-  margin-right: 8px;
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 2px;
-  transition: border 250ms var(--animation-timing), background-color 250ms var(--animation-timing);
-}
-
 .checkbox-icon {
   display: block;
 }
@@ -249,6 +233,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.checkbox-label span {
+  margin-right: 8px;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 2px;
+  transition: border 250ms var(--animation-timing), background-color 250ms var(--animation-timing);
 }
 
 .checkbox-text-agree {
@@ -279,9 +269,7 @@ body {
   border-radius: 4px;
   transition: background-color 250ms var(--animation-timing), box-shadow 250ms var(--animation-timing);
 }
-
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background: var(--secondary-accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

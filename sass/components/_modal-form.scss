@@ -32,6 +32,17 @@
   border-radius: 4px;
 
   transition: border 250ms var(--animation-timing);
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+
+  &:focus + .modal-logo-icon,
+  &:hover + .modal-logo-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-icon {
@@ -45,23 +56,6 @@
   transform: translateY(-50%);
   border: none;
   transition: fill 250ms var(--animation-timing);
-}
-
-.modal-data-input:focus,
-.modal-data-input:hover {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-
-.modal-data-input:focus + .modal-logo-icon,
-.modal-data-input:hover + .modal-logo-icon {
-  fill: var(--accent-color);
-}
-
-.modal-textarea:hover,
-.modal-textarea:focus {
-  border: 1px solid var(--accent-color);
-  outline: none;
 }
 
 .modal-data-label {
@@ -84,24 +78,23 @@
   border-radius: 4px;
 
   transition: border 250ms var(--animation-timing);
-}
 
-.modal-textarea::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
 
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 /* Checkbox в спрайте */
-
-.checkbox-label span {
-  margin-right: 8px;
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 2px;
-  transition: border 250ms var(--animation-timing), background-color 250ms var(--animation-timing);
-}
 
 .checkbox-icon {
   display: block;
@@ -125,6 +118,13 @@
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+
+  span {
+    margin-right: 8px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 2px;
+    transition: border 250ms var(--animation-timing), background-color 250ms var(--animation-timing);
+  }
 }
 
 .checkbox-text-agree {
@@ -160,12 +160,12 @@
 
   transition: background-color 250ms var(--animation-timing),
     box-shadow 250ms var(--animation-timing);
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background: var(--secondary-accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background: var(--secondary-accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 /* Checkbox в CSS */
