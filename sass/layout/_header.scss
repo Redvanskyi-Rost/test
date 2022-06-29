@@ -1,8 +1,13 @@
 .header {
   border: 1px solid #ececec;
-}
+  .container {
+    display: flex;
+    align-items: center;
+  }
 
-.header .container {
-  display: flex;
-  align-items: center;
+  .logo-accent {
+    color: var(--primary-text-color);
+
+    transition: color 250ms var(--animation-timing);
+  }
 }

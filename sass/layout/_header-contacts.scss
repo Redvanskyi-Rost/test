@@ -14,6 +14,16 @@
   margin-right: 50px;
 
   transition: color 250ms var(--animation-timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover .mail-icon,
+  &:focus .mail-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .mail-icon {
@@ -22,16 +32,6 @@
   align-self: center;
 
   transition: fill 250ms var(--animation-timing);
-}
-
-.header-mail:hover .mail-icon,
-.header-mail:focus .mail-icon {
-  fill: var(--accent-color);
-}
-
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
 }
 
 .header-tel {
@@ -45,6 +45,16 @@
   padding-top: 32px;
 
   transition: color 250ms var(--animation-timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover .mob-icon,
+  &:focus .mob-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .mob-icon {
@@ -53,14 +63,4 @@
   align-self: center;
 
   transition: fill 250ms var(--animation-timing);
-}
-
-.header-tel:hover .mob-icon,
-.header-tel:focus .mob-icon {
-  fill: var(--accent-color);
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
 }

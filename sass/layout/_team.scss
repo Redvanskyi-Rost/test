@@ -4,14 +4,6 @@
   background-color: var(--button-bg-color);
 }
 
-.team-list {
-  display: flex;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -19,4 +11,12 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }

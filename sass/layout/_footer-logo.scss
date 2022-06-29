@@ -5,20 +5,9 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
 
-.footer .logo-accent {
-  color: var(--primary-white-color);
-
-  transition: color 250ms var(--animation-timing);
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  color: var(--accent-color);
-}
-
-.footer-logo:hover .logo-accent,
-.footer-logo:focus .logo-accent {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

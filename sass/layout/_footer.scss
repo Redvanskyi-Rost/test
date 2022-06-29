@@ -2,6 +2,12 @@
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  .logo-accent {
+    color: var(--primary-white-color);
+
+    transition: color 250ms var(--animation-timing);
+  }
 }
 
 .footer-blocks {

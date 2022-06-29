@@ -6,12 +6,12 @@
   display: flex;
 }
 
-.advantage-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .advantage-item {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantage-icon {

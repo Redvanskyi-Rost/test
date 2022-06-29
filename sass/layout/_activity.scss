@@ -4,10 +4,6 @@
   padding-bottom: 94px;
 }
 
-.activity-job {
-  display: flex;
-}
-
 .activity-title {
   font-weight: 700;
   font-size: 36px;
@@ -18,12 +14,16 @@
   margin-bottom: 50px;
 }
 
-.activity-item {
-  width: 370px;
+.activity-job {
+  display: flex;
 }
 
-.activity-item:not(:last-child) {
-  margin-right: 30px;
+.activity-item {
+  width: 370px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .activity-product {
