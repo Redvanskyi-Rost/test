@@ -1,0 +1,213 @@
+.modal-form {
+  padding: 40px 40px;
+}
+
+.modal-title {
+  width: 448px;
+  margin-bottom: 12px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.modal-data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-data-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms var(--animation-timing);
+}
+
+.modal-icon {
+  position: relative;
+}
+
+.modal-logo-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  border: none;
+  transition: fill 250ms var(--animation-timing);
+}
+
+.modal-data-input:focus,
+.modal-data-input:hover {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal-data-input:focus + .modal-logo-icon,
+.modal-data-input:hover + .modal-logo-icon {
+  fill: var(--accent-color);
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal-data-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms var(--animation-timing);
+}
+
+.modal-textarea::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/* Checkbox в спрайте */
+
+.checkbox-label span {
+  margin-right: 8px;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 2px;
+  transition: border 250ms var(--animation-timing), background-color 250ms var(--animation-timing);
+}
+
+.checkbox-icon {
+  display: block;
+}
+
+.checkbox-input:hover + .checkbox-label span,
+.checkbox-input:focus + .checkbox-label span {
+  border: 1px solid var(--accent-color);
+}
+
+.checkbox-input:checked + .checkbox-label span {
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.checkbox-text-agree {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.modal-btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color 250ms var(--animation-timing),
+    box-shadow 250ms var(--animation-timing);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--secondary-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Checkbox в CSS */
+
+/* .modal-checkbox {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 2px;
+
+  transition: border 250ms var(--animation-timing), background-color 250ms var(--animation-timing);
+}
+
+.checkbox-input:hover + .checkbox-icon,
+.checkbox-input:focus + .checkbox-icon {
+  border: 1px solid var(--accent-color);
+}
+
+.checkbox-text-agree {
+  color: var(--accent-color);
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  border: none;
+  background-color: var(--accent-color);
+  background-image: url(../images/form-icon-check.svg);
+  background-size: contain;
+  background-origin: content-box;
+} */

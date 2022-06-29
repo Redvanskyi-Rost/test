@@ -1,0 +1,27 @@
+.header-logo {
+  color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.header .logo-accent {
+  color: var(--primary-text-color);
+
+  transition: color 250ms var(--animation-timing);
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--accent-color);
+}
+
+.header-logo:hover .logo-accent,
+.header-logo:focus .logo-accent {
+  color: var(--accent-color);
+}
