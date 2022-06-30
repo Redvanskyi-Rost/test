@@ -51,19 +51,19 @@
 
 .modal-icon {
   position: relative;
-}
 
-.modal-logo-icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  border: none;
-  transition: fill 250ms var(--animation-timing);
+  &-logo {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    border: none;
+    transition: fill 250ms var(--animation-timing);
 
-  .modal-data-input:focus + &,
-  .modal-data-input:hover + & {
-    fill: var(--accent-color);
+    .modal-data-input:focus + &,
+    .modal-data-input:hover + & {
+      fill: var(--accent-color);
+    }
   }
 }
 

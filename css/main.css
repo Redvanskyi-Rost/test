@@ -173,8 +173,7 @@ body {
 .modal-icon {
   position: relative;
 }
-
-.modal-logo-icon {
+.modal-icon-logo {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -182,7 +181,7 @@ body {
   border: none;
   transition: fill 250ms var(--animation-timing);
 }
-.modal-data-input:focus + .modal-logo-icon, .modal-data-input:hover + .modal-logo-icon {
+.modal-data-input:focus + .modal-icon-logo, .modal-data-input:hover + .modal-icon-logo {
   fill: var(--accent-color);
 }
 
@@ -869,7 +868,6 @@ body {
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .filter .filter-item + .filter-item {
   margin-left: 8px;
 }
