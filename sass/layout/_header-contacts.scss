@@ -19,11 +19,6 @@
   &:focus {
     color: var(--accent-color);
   }
-
-  &:hover .mail-icon,
-  &:focus .mail-icon {
-    fill: var(--accent-color);
-  }
 }
 
 .mail-icon {
@@ -32,6 +27,11 @@
   align-self: center;
 
   transition: fill 250ms var(--animation-timing);
+
+  .header-mail:hover &,
+  .header-mail:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .header-tel {
@@ -50,11 +50,6 @@
   &:focus {
     color: var(--accent-color);
   }
-
-  &:hover .mob-icon,
-  &:focus .mob-icon {
-    fill: var(--accent-color);
-  }
 }
 
 .mob-icon {
@@ -63,4 +58,9 @@
   align-self: center;
 
   transition: fill 250ms var(--animation-timing);
+
+  .header-tel:hover &,
+  .header-tel:focus & {
+    fill: var(--accent-color);
+  }
 }

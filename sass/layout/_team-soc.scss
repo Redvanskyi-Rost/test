@@ -29,15 +29,15 @@
   &:focus {
     background-color: var(--accent-color);
   }
-
-  &:hover .team-soc-icon,
-  &:focus .team-soc-icon {
-    fill: var(--primary-white-color);
-  }
 }
 
 .team-soc-icon {
   fill: var(--icon-color);
 
   transition: fill 250ms var(--animation-timing);
+
+  .team-soc-link:hover &,
+  .team-soc-link:focus & {
+    fill: var(--primary-white-color);
+  }
 }

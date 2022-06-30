@@ -8,9 +8,9 @@
 
     transition: color 250ms var(--animation-timing);
   }
-}
 
-.footer-blocks {
-  display: flex;
-  align-items: baseline;
+  &-blocks {
+    display: flex;
+    align-items: baseline;
+  }
 }
