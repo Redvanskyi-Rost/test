@@ -37,7 +37,7 @@
   transition: fill 250ms var(--animation-timing);
 
   .card-soc__link:hover &,
-  .card-soc__:focus & {
+  .card-soc__link:focus & {
     fill: var(--primary-white-color);
   }
 }
