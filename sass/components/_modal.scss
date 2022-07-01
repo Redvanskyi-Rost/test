@@ -38,7 +38,7 @@
   }
 }
 
-.close-icon {
+.close {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -56,11 +56,11 @@
   cursor: pointer;
 }
 
-.modal-close-icon {
+.close__icon {
   transition: fill 250ms var(--animation-timing);
 
-  .close-icon:hover &,
-  .close-icon:focus & {
+  .close:hover &,
+  .close:focus & {
     fill: var(--accent-color);
   }
 }

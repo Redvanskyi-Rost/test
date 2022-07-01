@@ -4,22 +4,22 @@
   gap: 30px;
 }
 
-.portfolio-items:hover {
+.portfolio-cards__items:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-items:hover .portfolio-thumbs-text {
+.portfolio-cards__items:hover .portfolio-thumbs__text {
   transform: translate(0%);
 }
 
-.content {
+.portfolio-content {
   padding: 20px 21px;
   background: #ffffff;
   border: 1px solid var(--button-bg-color);
 }
 
-.portfolio-title {
+.portfolio-content__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -28,7 +28,7 @@
   margin-bottom: 4px;
 }
 
-.portfolio-text {
+.portfolio-content__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -39,7 +39,7 @@
   position: relative;
   overflow: hidden;
 
-  &-text {
+  &__text {
     position: absolute;
     display: flex;
     top: 0;
@@ -53,7 +53,7 @@
   }
 }
 
-.portfolio-depiction {
+.portfolio-thumbs__depiction {
   position: absolute;
   width: 322px;
   height: 168px;

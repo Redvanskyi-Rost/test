@@ -1,9 +1,9 @@
-.team-soc-list {
+.card-soc {
   display: flex;
   justify-content: center;
 }
 
-.team-soc-item {
+.card-soc__item {
   width: 44px;
   height: 44px;
   margin-left: 10px;
@@ -14,7 +14,7 @@
   }
 }
 
-.team-soc-link {
+.card-soc__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,13 +31,13 @@
   }
 }
 
-.team-soc-icon {
+.card-soc__icon {
   fill: var(--icon-color);
 
   transition: fill 250ms var(--animation-timing);
 
-  .team-soc-link:hover &,
-  .team-soc-link:focus & {
+  .card-soc__link:hover &,
+  .card-soc__:focus & {
     fill: var(--primary-white-color);
   }
 }

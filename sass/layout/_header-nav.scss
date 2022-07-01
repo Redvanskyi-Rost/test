@@ -1,9 +1,9 @@
-.nav {
+.nav__list {
   display: flex;
   align-items: center;
 }
 
-.header-link {
+.nav__link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -20,7 +20,7 @@
   }
 }
 
-.header-items:not(:last-child) {
+.nav__items:not(:last-child) {
   margin-right: 50px;
 }
 

@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: center;
 
-  &-title {
+  &__title {
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -24,7 +24,7 @@
     text-transform: uppercase;
   }
 
-  &-button {
+  &__button {
     font-weight: 700;
     font-size: 16px;
     font-family: inherit;

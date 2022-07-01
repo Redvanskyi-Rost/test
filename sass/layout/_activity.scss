@@ -3,7 +3,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
-  &-title {
+  &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -12,24 +12,24 @@
 
     margin-bottom: 50px;
   }
+}
 
-  &-job {
-    display: flex;
-  }
+.job {
+  display: flex;
 
-  &-item {
+  &__item {
     width: 370px;
 
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
-}
 
-.activity-product {
-  position: relative;
+  &__product {
+    position: relative;
+  }
 
-  &-text {
+  &__text {
     position: absolute;
     bottom: 0;
     left: 0;

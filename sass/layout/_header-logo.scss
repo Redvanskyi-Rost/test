@@ -1,4 +1,4 @@
-.header-logo {
+.logo {
   color: var(--accent-color);
   padding-top: 24px;
   padding-bottom: 25px;
@@ -9,10 +9,8 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
+  // &:hover,
+  // &:focus {
+  //   color: var(--accent-color);
+  // }
 }
-
-

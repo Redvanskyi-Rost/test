@@ -2,7 +2,7 @@
   padding: 40px 40px;
 }
 
-.modal-title {
+.modal-form__title {
   width: 448px;
   margin-bottom: 12px;
 
@@ -22,7 +22,20 @@
   flex-direction: column;
   margin-bottom: 10px;
 
-  &-input {
+  &__label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--secondary-text-color);
+  }
+}
+
+.modal-icon {
+  position: relative;
+
+  &__input {
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -39,20 +52,7 @@
     }
   }
 
-  &-label {
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-
-    color: var(--secondary-text-color);
-  }
-}
-
-.modal-icon {
-  position: relative;
-
-  &-logo {
+  &__logo {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -60,8 +60,8 @@
     border: none;
     transition: fill 250ms var(--animation-timing);
 
-    .modal-data-input:focus + &,
-    .modal-data-input:hover + & {
+    .modal-icon__input:focus + &,
+    .modal-icon__input:hover + & {
       fill: var(--accent-color);
     }
   }
@@ -96,11 +96,11 @@
 
 /* Checkbox в спрайте */
 
-.checkbox-icon {
+.icon {
   display: block;
 }
 
-.checkbox-label {
+.checkbox__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,24 +111,24 @@
   color: var(--secondary-text-color);
 }
 
-.checkbox-label span {
+.checkbox__label span {
   margin-right: 8px;
   border: 1px solid var(--secondary-text-color);
   border-radius: 2px;
   transition: border 250ms var(--animation-timing), background-color 250ms var(--animation-timing);
 
-  .checkbox-input:hover + &,
-  .checkbox-input:focus + & {
+  .checkbox__input:hover + &,
+  .checkbox__input:focus + & {
     border: 1px solid var(--accent-color);
   }
 
-  .checkbox-input:checked + & {
+  .checkbox__input:checked + & {
     border: 1px solid var(--accent-color);
     background-color: var(--accent-color);
   }
 }
 
-.checkbox-text-agree {
+.checkbox__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -136,7 +136,7 @@
   color: var(--accent-color);
 }
 
-.modal-btn {
+.modal__btn {
   width: 200px;
   height: 50px;
   padding: 10px 55px;

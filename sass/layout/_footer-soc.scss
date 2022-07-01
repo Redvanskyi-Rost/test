@@ -1,7 +1,7 @@
-.footer-soc {
+.social {
   width: 206px;
 
-  &-title {
+  &__title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -14,11 +14,11 @@
     color: var(--primary-white-color);
   }
 
-  &-list {
+  &__list {
     display: flex;
   }
 
-  &-item {
+  &__item {
     width: 44px;
     height: 44px;
     margin-left: 10px;
@@ -28,7 +28,7 @@
     }
   }
 
-  &-link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,13 +45,13 @@
     }
   }
 
-  &-icon {
+  &__icon {
     fill: var(--primary-white-color);
 
     transition: fill 250ms var(--animation-timing);
 
-    &-link:hover &,
-    &-link:focus & {
+    &__link:hover &,
+    &__link:focus & {
       fill: var(--primary-white-color);
     }
   }
