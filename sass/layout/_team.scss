@@ -39,10 +39,6 @@
     }
   }
 
-  &__item:not(:last-child) {
-    // margin-right: 30px;
-  }
-
   &__item {
     @media screen and (min-width: 767px) {
       width: calc((100% - 30px) / 2);

@@ -750,6 +750,11 @@ body {
     width: calc((100% - 60px) / 3);
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
+}
 .clients__link {
   display: flex;
   justify-content: center;
