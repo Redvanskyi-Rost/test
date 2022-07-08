@@ -1079,16 +1079,36 @@ body {
 }
 
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
-.filter .filter__item + .filter__item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .filter .filter__item + .filter__item {
+    margin-left: 8px;
+    margin-bottom: 15px;
+  }
 }
 
 .filter__button {
@@ -1117,6 +1137,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-cards__items {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-cards__items {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-cards__link:hover,

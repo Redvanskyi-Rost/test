@@ -2,6 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  &__items {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
+  }
 }
 
 .portfolio-cards__link:hover,
