@@ -1,8 +1,17 @@
 .subscribe {
-  width: 570px;
-  margin-left: 94px;
-  margin-right: 0;
+  width: 100%;
+  text-align: center;
 
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 94px;
+    margin-right: 0;
+    text-align: left;
+    width: 570px;
+  }
   &__label {
     width: 219px;
 
@@ -19,13 +28,19 @@
 
   &__form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
-    margin-top: 0;
+    margin-bottom: 20px;
     padding: 15px 15px 15px 15px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -54,7 +69,7 @@
     width: 200px;
     height: 50px;
     padding: 10px 29px;
-    margin-left: 12px;
+
     display: flex;
     align-items: center;
     text-align: center;
@@ -77,6 +92,10 @@
     &:hover,
     &:focus {
       background: var(--secondary-accent-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
     }
   }
 

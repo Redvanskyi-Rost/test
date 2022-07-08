@@ -1,6 +1,7 @@
 .social {
-  width: 206px;
-
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+  }
   &__title {
     font-family: 'Roboto';
     font-style: normal;
@@ -9,13 +10,21 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 20px;
+    margin-top: 60px;
 
     color: var(--primary-white-color);
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
   }
 
   &__list {
     display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
   }
 
   &__item {

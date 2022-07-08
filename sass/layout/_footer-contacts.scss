@@ -1,10 +1,15 @@
 .footer-contacts {
-  width: 231px;
-  margin-right: 70px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
   a {
     display: block;
-    margin-top: 9px;
   }
 }
 
@@ -12,6 +17,8 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 8px;
   color: var(--footer-contacts-text-color);
 
   transition: color 250ms var(--animation-timing);
@@ -20,12 +27,19 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-top: 9px;
+  }
 }
 
 .footer-contacts__tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 8px;
   color: var(--footer-contacts-text-color);
 
   transition: color 250ms var(--animation-timing);
@@ -33,6 +47,11 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-top: 9px;
   }
 }
 
@@ -42,6 +61,11 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-white-color);
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
