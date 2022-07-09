@@ -1,8 +1,14 @@
 .header {
   border: 1px solid #ececec;
+
   .container {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      height: 60px;
+      justify-content: space-between;
+    }
   }
 
   .logo__accent {
