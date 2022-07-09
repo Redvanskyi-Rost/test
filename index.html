@@ -129,19 +129,46 @@
           <ul class="job list">
             <li class="job__item link">
               <div class="job__product">
-                <img src="./images/pc.jpg" alt="pc" width="370" height="294" />
+                <img 
+                  srcset="
+                  ./images/desktop/pc.webp 1x, 
+                  ./images/desktop/pc@2x.webp 2x
+                  " 
+                  src="./images/pc.jpg" 
+                  alt="pc" 
+                  width="370" 
+                  height="294" 
+                />
                 <p class="job__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="job__item link">
               <div class="job__product">
-                <img src="./images/laptop.jpg" alt="laptop" width="370" height="294" />
+                <img 
+                  srcset="
+                  ./images/desktop/laptop.webp 1x, 
+                  ./images/desktop/laptop@2x.webp 2x
+                  "  
+                  src="./images/laptop.jpg" 
+                  alt="laptop" 
+                  width="370" 
+                  height="294" 
+                />
                 <p class="job__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="job__item link">
               <div class="job__product">
-                <img src="./images/ipad.jpg" alt="ipad" width="370" height="294" />
+                <img 
+                  srcset="
+                  ./images/desktop/ipad.webp 1x, 
+                  ./images/desktop/ipad@2x.webp 2x
+                  "  
+                  src="./images/ipad.jpg" 
+                  alt="laptop" 
+                  width="370" 
+                  height="294" 
+                />
                 <p class="job__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -154,7 +181,34 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list link">
             <li class="team__item">
-              <img src="./images/ihor.jpg" alt="ihor" width="270" height="260" />
+              <picture>
+                    <source 
+                      srcset="
+                      ./images/desktop/ihor-desk.webp 1x,
+                      ./images/desktop/ihor-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source 
+                      srcset="
+                      ./images/tablet/ihor-tab.webp 1x,
+                      ./images/tablet/ihor-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source 
+                      srcset="
+                      ./images/mobile/ihor-mob.webp 1x,
+                      ./images/mobile/ihor-mob@2x.webp 2x"
+                      media="(min-width: 320px)
+                      "
+                    />
+
+                    <img src="./images/ihor.jpg" alt="ihor" />
+                  </picture>
+              
               <div class="card">
                 <h3 class="card__name">Игорь Демьяненко</h3>
                 <p class="card__text">Product Designer</p>
@@ -192,7 +246,34 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/olha.jpg" alt="olha" width="270" height="260" />
+              <picture>
+                    <source 
+                      srcset="
+                      ./images/desktop/olha-desk.webp 1x,
+                      ./images/desktop/olha-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source 
+                      srcset="
+                      ./images/tablet/olha-tab.webp 1x,
+                      ./images/tablet/olha-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source 
+                      srcset="
+                      ./images/mobile/olha-mob.webp 1x,
+                      ./images/mobile/olha-mob@2x.webp 2x"
+                      media="(min-width: 320px)
+                      "
+                    />
+
+                    <img src="./images/olha.jpg" alt="olha" />
+                  </picture>
+              
               <div class="card">
                 <h3 class="card__name">Ольга Репина</h3>
                 <p class="card__text">Frontend Developer</p>
@@ -230,7 +311,34 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/nikolai.jpg" alt="nikolai" width="270" height="260" />
+              <picture>
+                    <source 
+                      srcset="
+                      ./images/desktop/nikolai-desk.webp 1x,
+                      ./images/desktop/nikolai-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source 
+                      srcset="
+                      ./images/tablet/nikolai-tab.webp 1x,
+                      ./images/tablet/nikolai-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source 
+                      srcset="
+                      ./images/mobile/nikolai-mob.webp 1x,
+                      ./images/mobile/nikolai-mob@2x.webp 2x"
+                      media="(min-width: 320px)
+                      "
+                    />
+
+                    <img src="./images/nikolai.jpg" alt="nikolai" />
+                  </picture>
+              
               <div class="card">
                 <h3 class="card__name">Николай Тарасов</h3>
                 <p class="card__text">Marketing</p>
@@ -268,7 +376,34 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/michael.jpg" alt="michael" width="270" height="260" />
+              <picture>
+                    <source 
+                      srcset="
+                      ./images/desktop/michael-desk.webp 1x,
+                      ./images/desktop/michael-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source 
+                      srcset="
+                      ./images/tablet/michael-tab.webp 1x,
+                      ./images/tablet/michael-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source 
+                      srcset="
+                      ./images/mobile/michael-mob.webp 1x,
+                      ./images/mobile/michael-mob@2x.webp 2x"
+                      media="(min-width: 320px)
+                      "
+                    />
+
+                    <img src="./images/michael.jpg" alt="michael" />
+                  </picture>
+              
               <div class="card">
                 <h3 class="card__name">Михаил Ермаков</h3>
                 <p class="card__text">UI Designer</p>
