@@ -1,18 +1,48 @@
 .nav__list {
-  display: flex;
-  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+
+    margin-left: 88px;
+    margin-right: 82px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-right: 302px;
+  }
   // padding-top: 48px;
   // padding-left: 40px;
 }
 
 .nav__link {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
   letter-spacing: 0.02em;
-  // padding-bottom: 32px;
-  // padding-top: 32px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   transition: color 250ms var(--animation-timing);
 
@@ -23,13 +53,15 @@
 }
 
 .nav__items:not(:last-child) {
-  // margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .current {
+  position: relative;
+  color: var(--accent-color);
   @media screen and(min-width:768px) {
-    position: relative;
-    color: var(--accent-color);
     &::after {
       content: '';
       position: absolute;

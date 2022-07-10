@@ -11,6 +11,12 @@
     display: none;
   }
 }
+
+.header-btn:hover,
+.header-btn:focus {
+  fill: var(--accent-color);
+}
+
 .header-btn .header-btn__close {
   display: none;
 }
@@ -24,10 +30,12 @@
 }
 
 .header-menu {
-  &.is-open {
-    display: flex;
-    padding: 48px 40px;
-    flex-direction: column;
+  @media screen and (max-width: 767px) {
+    &.is-open {
+      display: flex;
+      padding: 48px 40px;
+      flex-direction: column;
+    }
   }
 
   @media screen and (max-width: 767px) {
