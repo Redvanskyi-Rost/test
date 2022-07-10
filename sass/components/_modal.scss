@@ -10,6 +10,10 @@
   background: rgba(0, 0, 0, 0.2);
   transform: scale(1);
   transition: opacity 400ms var(--animation-timing), transform 400ms var(--animation-timing);
+
+  @media screen and (max-width: 767px) {
+    padding: 0 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -19,12 +23,7 @@
 }
 
 .modal {
-  position: absolute;
-  width: 528px;
-  height: 581px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -35,6 +34,18 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%), scale(0.5);
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 }
 
